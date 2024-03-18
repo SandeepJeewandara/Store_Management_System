@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="505.0" prefWidth="867.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.johnscafe.ViewItemsController">
+   <children>
+      <TableView fx:id="itemTable" layoutX="39.0" layoutY="251.0" prefHeight="199.0" prefWidth="789.0">
+         <columns>
+            <TableColumn fx:id="itemCode" prefWidth="102.39997100830078" text="Item Code" />
+            <TableColumn fx:id="name" prefWidth="115.99996948242188" text="Name" />
+            <TableColumn fx:id="brand" prefWidth="110.4000244140625" text="Brand" />
+            <TableColumn fx:id="price" prefWidth="104.0" text="Price" />
+            <TableColumn fx:id="quantity" prefWidth="106.39993286132812" text="Quantity" />
+            <TableColumn fx:id="category" prefWidth="102.4000244140625" text="Category" />
+            <TableColumn fx:id="startingDate" prefWidth="152.0" text="Starting Date" />
+         </columns>
+      </TableView>
+      <AnchorPane fx:id="itemDetailsPane" layoutX="39.0" layoutY="14.0" prefHeight="214.0" prefWidth="703.0">
+         <children>
+            <Text layoutX="25.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Code       " wrappingWidth="125.0">
+               <font>
+                  <Font name="Segoe UI Semibold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="25.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name      " wrappingWidth="125.0">
+               <font>
+                  <Font name="Segoe UI Semibold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="25.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Brand              " wrappingWidth="125.0">
+               <font>
+                  <Font name="Segoe UI Semibold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="25.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Price       " wrappingWidth="125.0">
+               <font>
+                  <Font name="Segoe UI Semibold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="25.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity         " wrappingWidth="125.0">
+               <font>
+                  <Font name="Segoe UI Semibold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="25.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Category         " wrappingWidth="125.0">
+               <font>
+                  <Font name="Segoe UI Semibold" size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="25.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purchase Date " wrappingWidth="125.0">
+               <font>
+                  <Font name="Segoe UI Semibold" size="14.0" />
+               </font>
+            </Text>
+            <Label fx:id="itemCodeLabel" layoutX="140.0" layoutY="10.0">
+               <font>
+                  <Font name="Segoe UI Semibold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Text layoutX="125.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+               <font>
+                  <Font name="Segoe UI Semibold" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="125.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+               <font>
+                  <Font name="Segoe UI Semibold" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="125.0" layoutY="115.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+               <font>
+                  <Font name="Segoe UI Semibold" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="125.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+               <font>
+                  <Font name="Segoe UI Semibold" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="135.0" layoutY="205.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+               <font>
+                  <Font name="Segoe UI Semibold" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="125.0" layoutY="175.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+               <font>
+                  <Font name="Segoe UI Semibold" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="125.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":">
+               <font>
+                  <Font name="Segoe UI Semibold" size="16.0" />
+               </font>
+            </Text>
+            <Label fx:id="itemQuantityLabel" layoutX="140.0" layoutY="130.0">
+               <font>
+                  <Font name="Segoe UI Semibold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="itemPriceLabel" layoutX="140.0" layoutY="100.0">
+               <font>
+                  <Font name="Segoe UI Semibold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="itemBrandLabel" layoutX="140.0" layoutY="70.0">
+               <font>
+                  <Font name="Segoe UI Semibold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="itemNameLabel" layoutX="140.0" layoutY="40.0">
+               <font>
+                  <Font name="Segoe UI Semibold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="itemCategoryLabel" layoutX="140.0" layoutY="160.0">
+               <font>
+                  <Font name="Segoe UI Semibold Italic" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="itemDateLabel" layoutX="150.0" layoutY="190.0">
+               <font>
+                  <Font name="Segoe UI Semibold Italic" size="14.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="itemImageView" fitHeight="191.0" fitWidth="198.0" layoutX="430.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

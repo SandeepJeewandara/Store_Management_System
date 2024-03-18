@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.johnscafe.HelloController">
+   <children>
+      <AnchorPane layoutX="542.0" layoutY="19.0" prefHeight="639.0" prefWidth="523.0" style="-fx-background-color: #D3D3D3;">
+         <children>
+            <Text fontSmoothingType="LCD" layoutX="190.0" layoutY="605.0" strokeType="OUTSIDE" strokeWidth="0.0" text="\@Johns Internet Cafe " wrappingWidth="161.44971656799316">
+               <font>
+                  <Font name="Segoe UI Semibold" size="15.0" />
+               </font>
+            </Text>
+            <Button fx:id="ContinueButton" layoutX="120.0" layoutY="496.0" mnemonicParsing="false" onAction="#onContinueButtonClick" prefHeight="46.0" prefWidth="121.0" style="-fx-background-color: #813EB6; -fx-background-radius: 40;" text="Continue" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="13.5" />
+               </font>
+            </Button>
+            <Button fx:id="ExitButton" layoutX="283.0" layoutY="498.0" mnemonicParsing="false" onAction="#onExitButtonClick" prefHeight="46.0" prefWidth="121.0" style="-fx-background-color: #813EB6; -fx-background-radius: 40;" text="Exit" textFill="WHITE">
+               <font>
+                  <Font name="Tahoma Bold" size="13.5" />
+               </font>
+            </Button>
+            <Text layoutX="88.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to John's Internet Cafe's Inventory Management System" textAlignment="CENTER" wrappingWidth="380.53668212890625">
+               <font>
+                  <Font name="Microsoft JhengHei" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="119.0" layoutY="206.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Streamline your inventory with ease and precision. Effortlessly track stock, manage suppliers, and optimize operations.     Experience efficient inventory control at your fingertips.Simplify your business, unlock success at John's Internet Cafe.&quot;" wrappingWidth="324.86918640136713">
+               <font>
+                  <Font name="System Italic" size="17.0" />
+               </font>
+            </Text>
+            <TextField fx:id="usernameField" layoutX="118.0" layoutY="361.0" prefHeight="36.0" prefWidth="286.0" promptText="Enter Username" style="-fx-background-radius: 20;" />
+            <PasswordField fx:id="loginPassword" layoutX="120.0" layoutY="416.0" prefHeight="36.0" prefWidth="286.0" promptText="Enter Password" style="-fx-background-radius: 20;" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="205.0" fitWidth="278.0" layoutX="132.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Pictures/Logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

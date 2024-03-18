@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="505.0" prefWidth="867.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.johnscafe.SelectDealersController">
+   <children>
+      <Button fx:id="addDealersButton" layoutX="730.0" layoutY="449.0" mnemonicParsing="false" onAction="#onAddDealersButtonClick" prefHeight="33.0" prefWidth="90.0" styleClass="function-button" stylesheets="@styles.css" text="Add Dealers" textFill="WHITE" />
+      <AnchorPane fx:id="addDealerPane" layoutX="274.0" layoutY="118.0" prefHeight="269.0" prefWidth="318.0" styleClass="addDealerBackground" stylesheets="@styles.css" visible="false">
+         <children>
+            <Text layoutX="25.0" layoutY="25.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dealer Code       " wrappingWidth="125.0">
+               <font>
+                  <Font name="Segoe UI Semibold" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="25.0" layoutY="65.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dealer Name      " wrappingWidth="125.0">
+               <font>
+                  <Font name="Segoe UI Semibold" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="25.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact no" wrappingWidth="125.0">
+               <font>
+                  <Font name="Segoe UI Semibold" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="25.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location" wrappingWidth="125.0">
+               <font>
+                  <Font name="Segoe UI Semibold" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="25.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="No.of Items         " wrappingWidth="125.0">
+               <font>
+                  <Font name="Segoe UI Semibold" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="dealerCodeInput" layoutX="150.0" layoutY="7.0" />
+            <TextField fx:id="dealerNameInput" layoutX="150.0" layoutY="47.0" />
+            <TextField fx:id="contactInput" layoutX="150.0" layoutY="86.0" />
+            <TextField fx:id="locationInput" layoutX="150.0" layoutY="127.0" />
+            <TextField fx:id="noOfItemsInput" layoutX="150.0" layoutY="167.0" />
+            <Button fx:id="addItemBtn" layoutX="123.0" layoutY="220.0" mnemonicParsing="false" onAction="#onAddItemBtnClick" prefHeight="26.0" prefWidth="71.0" styleClass="function-button" stylesheets="@styles.css" text="Add" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <TableView fx:id="dealerTableView" layoutX="60.0" layoutY="61.0" prefHeight="186.0" prefWidth="730.0">
+        <columns>
+          <TableColumn fx:id="dealerId" prefWidth="75.0" text="Dealer Id" />
+          <TableColumn fx:id="dealerName" prefWidth="148.80001831054688" text="Dealer Name" />
+            <TableColumn fx:id="dealerTel" prefWidth="145.5999755859375" text="Dealer Tel" />
+            <TableColumn fx:id="dealerLocation" prefWidth="194.39993286132812" text="Dealer Location" />
+            <TableColumn fx:id="noOfItems" prefWidth="168.0" text="No of Items" />
+        </columns>
+      </TableView>
+      <Label fx:id="label1" layoutX="389.0" layoutY="26.0" text="All Dealers">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="selectDealersButton" layoutX="630.0" layoutY="449.0" mnemonicParsing="false" onAction="#onSelectDealersBtn" prefHeight="33.0" prefWidth="90.0" styleClass="function-button" stylesheets="@styles.css" text="Select Dealers" textFill="WHITE" />
+      <TableView fx:id="selectTableView" layoutX="60.0" layoutY="294.0" prefHeight="126.0" prefWidth="730.0">
+         <columns>
+            <TableColumn fx:id="selectDealerId1" prefWidth="75.0" text="Dealer Id" />
+            <TableColumn fx:id="selectDealerName1" prefWidth="148.80001831054688" text="Dealer Name" />
+            <TableColumn fx:id="selectDealerTel1" prefWidth="145.5999755859375" text="Dealer Tel" />
+            <TableColumn fx:id="selecetDealerLocation1" prefWidth="194.39993286132812" text="Dealer Location" />
+            <TableColumn fx:id="selectnoOfItems1" prefWidth="168.0" text="No of Items" />
+         </columns>
+      </TableView>
+      <Label fx:id="label2" layoutX="365.0" layoutY="259.0" text="Selected Dealers">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

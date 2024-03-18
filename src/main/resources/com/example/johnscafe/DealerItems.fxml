@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="505.0" prefWidth="867.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.johnscafe.DealerItemsController">
+   <children>
+      <TableView fx:id="selectTableView" layoutX="60.0" layoutY="60.0" prefHeight="126.0" prefWidth="730.0">
+         <columns>
+            <TableColumn fx:id="selectDealerId1" prefWidth="75.0" text="Dealer Id" />
+            <TableColumn fx:id="selectDealerName1" prefWidth="148.80001831054688" text="Dealer Name" />
+            <TableColumn fx:id="selectDealerTel1" prefWidth="145.5999755859375" text="Dealer Tel" />
+            <TableColumn fx:id="selecetDealerLocation1" prefWidth="194.39993286132812" text="Dealer Location" />
+            <TableColumn fx:id="selectnoOfItems1" prefWidth="168.0" text="No of Items" />
+         </columns>
+      </TableView>
+      <Label fx:id="label2" layoutX="365.0" layoutY="20.0" text="Selected Dealers">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="label1" layoutX="344.0" layoutY="214.0" text="Selected Dealer Items">
+         <font>
+            <Font name="Segoe UI Semibold" size="18.0" />
+         </font>
+      </Label>
+      <TableView fx:id="dealerItemsView" layoutX="64.0" layoutY="251.0" prefHeight="160.0" prefWidth="730.0">
+         <columns>
+            <TableColumn fx:id="selectDealerName" prefWidth="163.20001983642578" text="Dealer" />
+            <TableColumn fx:id="selectItemName" prefWidth="145.60003662109375" text="Item Name" />
+            <TableColumn fx:id="selectItemBrand" prefWidth="146.39999389648438" text="Brand" />
+            <TableColumn fx:id="selectItemPrice" prefWidth="114.4000244140625" text="Price" />
+            <TableColumn fx:id="selectStockQuantity" prefWidth="168.0" text="Stock Quantity" />
+         </columns>
+      </TableView>
+      <Button fx:id="addDealersButton" layoutX="740.0" layoutY="459.0" mnemonicParsing="false" onAction="#onAddDealersButtonClick" prefHeight="33.0" prefWidth="90.0" styleClass="function-button" stylesheets="@styles.css" text="Add Dealers" textFill="WHITE" />
+      <AnchorPane layoutX="325.0" layoutY="141.0" prefHeight="200.0" prefWidth="200.0" styleClass="dealerItemsPane" />
+   </children>
+</AnchorPane>

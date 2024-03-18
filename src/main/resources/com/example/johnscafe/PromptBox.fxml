@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="promptBoxPain" prefHeight="150.0" prefWidth="400.0" styleClass="prompt-Background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.johnscafe.PromptBoxController">
+   <children>
+      <Label fx:id="promptText" alignment="CENTER" contentDisplay="CENTER" layoutX="-2.0" layoutY="39.0" prefHeight="22.0" prefWidth="400.0" text="Label1" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Semibold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="okButton" layoutX="170.0" layoutY="87.0" mnemonicParsing="false" onAction="#onOkButtonClick" prefHeight="26.0" prefWidth="58.0" styleClass="function-button" stylesheets="@styles.css" text="OK" textFill="#fafafa">
+         <font>
+            <Font name="Segoe UI Semibold" size="10.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

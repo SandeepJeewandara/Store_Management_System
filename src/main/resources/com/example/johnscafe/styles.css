@@ -1,0 +1,98 @@
+
+#logo{
+    -fx-background-color: white;
+    -fx-background-radius: 50px;
+}
+
+.background{
+}
+
+.navigation_pane{
+    -fx-background-color:linear-gradient(to bottom right, #433169, #b435cb);
+}
+
+
+.profile_picture{
+    -fx-background-color: white;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+}
+
+.option_button{
+    -fx-background-color: black;
+    -fx-background-radius: 50px;
+    -fx-border-radius: 50px;
+    -fx-border-color: white;
+    -fx-border-width:2px ;
+    -fx-cursor:pointer;
+}
+
+.option_button1{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+    -fx-cursor: pointer;
+}
+
+.option_button1:hover{
+    -fx-background-color: white;
+    -fx-opacity:.2;
+    -fx-background-radius:20px;
+}
+
+
+.title_pane{
+    -fx-background-color:linear-gradient(to right, #433169, #b435cb);
+}
+
+
+.item-pane{
+    -fx-border-color: white;
+    -fx-border-radius: 20;
+    -fx-background-color: rgba(255, 255, 255, 1.0);
+    -fx-background-radius: 20;
+}
+
+
+
+.item-header{
+    -fx-background-color: red;
+}
+
+.function-button{
+    -fx-background-color:#AB7595;
+    -fx-background-radius: 20px;
+    -fx-cursor: pointer;
+}
+.delete-button{
+    -fx-background-color:#EB3838;
+    -fx-cursor: pointer;
+}
+
+.save-button{
+    -fx-background-color: #72be08;
+    -fx-cursor: pointer;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+
+.prompt-Background{
+    -fx-background-color: #D3D3D3;
+}
+
+.image-view{
+    -fx-background-color: #D3D3D3;
+}
+
+.addDealerBackground{
+    -fx-background-color: #D3D3D3;
+}
+
+.dealerItemsPane{
+    -fx-background-color: #D3D3D3;
+}
+
+.selectedDealers{
+    -fx-background-color: rgba(191, 90, 211, 0.82);
+    -fx-background-radius: 20px;
+}
+

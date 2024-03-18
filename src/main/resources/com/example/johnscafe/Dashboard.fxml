@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1100.0" styleClass="background" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.johnscafe.DashboardController">
+   <children>
+      <TableView fx:id="itemTable" layoutX="272.0" layoutY="323.0" prefHeight="233.0" prefWidth="750.0">
+        <columns>
+          <TableColumn fx:id="itemCode" prefWidth="82.66668701171875" text="Item Code" />
+          <TableColumn fx:id="name" prefWidth="111.73330688476562" text="Name" />
+            <TableColumn fx:id="brand" prefWidth="85.86663818359375" text="Brand" />
+            <TableColumn fx:id="price" prefWidth="99.20001220703125" text="Price" />
+            <TableColumn fx:id="quantity" prefWidth="109.0667724609375" text="Quantity" />
+            <TableColumn fx:id="category" prefWidth="116.5333251953125" text="Category" />
+            <TableColumn fx:id="startingDate" prefWidth="141.59995117187498" text="Starting Date" />
+        </columns>
+      </TableView>
+      <AnchorPane minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="230.0" styleClass="navigation_pane">
+         <children>
+            <FontAwesomeIconView fill="WHITE" glyphName="UPLOAD" layoutX="48.0" layoutY="318.0" size="20" />
+            <Text fill="WHITE" layoutX="50.0" layoutY="317.0" strokeType="OUTSIDE" strokeWidth="0.0" text="UPDATE ITEMS" textAlignment="CENTER" wrappingWidth="144.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="WHITE" glyphName="TRASH" layoutX="51.0" layoutY="254.0" size="20" />
+            <Text fill="WHITE" layoutX="50.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DELETE ITEMS" textAlignment="CENTER" wrappingWidth="144.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="WHITE" glyphName="PLUS" layoutX="59.0" layoutY="192.0" size="20" />
+            <Text fill="WHITE" layoutX="50.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD ITEMS" textAlignment="CENTER" wrappingWidth="144.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="addItemButton" layoutX="16.0" layoutY="157.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="47.0" prefWidth="195.0" styleClass="option_button1" />
+            <Button fx:id="deleteItemButton" layoutX="16.0" layoutY="222.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="47.0" prefWidth="195.0" styleClass="option_button1" />
+            <Button fx:id="updateItemButton" layoutX="16.0" layoutY="287.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="47.0" prefWidth="195.0" styleClass="option_button1" />
+            <Text fill="WHITE" layoutX="50.0" layoutY="381.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SAVE ITEMS" textAlignment="CENTER" wrappingWidth="144.89894861446945">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="WHITE" glyphName="PASTE" layoutX="51.0" layoutY="386.0" size="20" />
+            <Text fill="WHITE" layoutX="50.0" layoutY="447.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VIEW ITEMS" textAlignment="CENTER" wrappingWidth="144.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="WHITE" glyphName="EYE" layoutX="52.0" layoutY="449.0" size="20" />
+            <Text fill="WHITE" layoutX="50.0" layoutY="512.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELECT DEALERS" textAlignment="CENTER" wrappingWidth="145.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="WHITE" glyphName="USER" layoutX="46.0" layoutY="515.0" size="20" />
+            <Text fill="WHITE" layoutX="50.0" layoutY="577.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DEALER ITEMS" textAlignment="CENTER" wrappingWidth="145.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Text>
+            <FontAwesomeIconView fill="WHITE" glyphName="LAPTOP" layoutX="42.0" layoutY="580.0" size="20" />
+            <AnchorPane layoutX="24.0" layoutY="25.0" prefHeight="106.0" prefWidth="190.0" styleClass="profile_picture">
+               <children>
+                  <ImageView fitHeight="63.0" fitWidth="128.0" layoutX="28.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Pictures/Logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Button fx:id="saveItemButton" layoutX="16.0" layoutY="352.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="47.0" prefWidth="195.0" styleClass="option_button1" />
+            <Button fx:id="viewItemButton" layoutX="16.0" layoutY="417.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="47.0" prefWidth="195.0" styleClass="option_button1" />
+            <Button fx:id="selectDealersButton" layoutX="16.0" layoutY="482.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="47.0" prefWidth="195.0" styleClass="option_button1" />
+            <Button fx:id="dealerItemsButton" layoutX="16.0" layoutY="547.0" mnemonicParsing="false" onAction="#handleClicks" prefHeight="47.0" prefWidth="195.0" styleClass="option_button1" />
+            <Button fx:id="backToLogin" layoutX="-4.0" layoutY="1.0" mnemonicParsing="false" onAction="#onBackToLoginButton" prefHeight="32.0" prefWidth="38.0" style="-fx-background-radius: 50px; -fx-background-color: transpaent;" textFill="WHITE">
+               <graphic>
+                  <FontAwesomeIconView fill="WHITE" glyphName="ANGLE_LEFT" size="30" />
+               </graphic>
+            </Button>
+            <AnchorPane layoutX="41.0" layoutY="622.0" prefHeight="54.0" prefWidth="143.0" style="-fx-border-width: 2px; -fx-border-color: white;" styleClass="welcome_banner">
+               <children>
+                  <Text fill="WHITE" layoutX="36.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Acc Name">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Label fx:id="usernameLabel" layoutX="39.0" layoutY="22.0" text="Sandeep" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="titlePane" layoutX="231.0" layoutY="54.0" prefHeight="142.0" prefWidth="877.0" styleClass="title_pane">
+         <children>
+            <Label fx:id="titleLabel" layoutX="51.0" layoutY="53.0" text="Johns Cafe Inventory Management" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <StackPane fx:id="stackPane" layoutX="232.0" layoutY="194.0" prefHeight="505.0" prefWidth="867.0">
+         <children>
+
+            <AnchorPane fx:id="pnSaveItem" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <children>
+                  <Text layoutX="7.0" layoutY="250.0" strokeWidth="0.0" text="SAVE ITEM" textAlignment="CENTER" wrappingWidth="869.2479248046875">
+                     <font>
+                        <Font name="FontAwesome" size="32.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+
+            <AnchorPane fx:id="pnDeleteItem" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;">
+               <children>
+                  <Text layoutY="250.0" strokeWidth="0.0" text="DELETE ITEM" textAlignment="CENTER" wrappingWidth="875.6480712890625">
+                     <font>
+                        <Font name="FontAwesome" size="32.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+
+            <AnchorPane fx:id="pnAddItems" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="500.0" style="-fx-background-color: white;" />
+
+            <AnchorPane fx:id="pnViewItems" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" />
+
+            <AnchorPane fx:id="pnUpdateItem" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" />
+
+            <AnchorPane fx:id="pnSelectDealers" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" />
+            <AnchorPane fx:id="pnDealerItems" prefHeight="497.0" prefWidth="877.0" style="-fx-background-color: white;" />
+
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

@@ -4,7 +4,7 @@
 
 ## Overview
 
-This project aims to develop a Java-based inventory management system for an Internet cafe, facilitating easy tracking of items, dealers, and associated information. The system is designed using object-oriented principles, ensuring modularity, code reuse, and robustness. 
+This project aims to develop a Java-based inventory management system for an Store, facilitating easy tracking of items, dealers, and associated information. The system is designed using object-oriented principles, ensuring modularity, code reuse, and robustness. 
 
 ## Features
 
